@@ -4,7 +4,7 @@ const User = require("../models/User");
 const protect = require("../middleware/authMiddleware");
 
 const router = express.Router();
-
+//
 
 router.get("/attendance", protect(["Teacher"]), async (req, res) => {
     const { date, studentName } = req.query;

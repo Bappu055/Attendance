@@ -6,5 +6,5 @@ const AttendanceSchema = new mongoose.Schema({
     time: { type: String, required: true },
     selfie: { type: String, required: true },
 });
-
+//
 module.exports = mongoose.model("Attendance", AttendanceSchema);

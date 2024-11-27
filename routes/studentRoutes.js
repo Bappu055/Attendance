@@ -14,7 +14,7 @@ const storage = multer.diskStorage({
     },
 });
 const upload = multer({ storage });
-
+//
 
 router.post("/attendance", protect(["Student"]), upload.single("selfie"), async (req, res) => {
     try {

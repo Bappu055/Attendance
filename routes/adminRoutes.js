@@ -3,7 +3,7 @@ const User = require("../models/User");
 const protect = require("../middleware/authMiddleware");
 
 const router = express.Router();
-
+//
 router.get("/users", protect(["Admin"]), async (req, res) => {
     const { role, name, date } = req.query;
     try {
